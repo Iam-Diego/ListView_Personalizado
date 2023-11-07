@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/cubo" />
+
+    <TextView
+        android:id="@+id/textViewAreaTitle"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageView"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/imageView"
+        android:text="Área:" />
+
+    <TextView
+        android:id="@+id/textViewAreaDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/imageView"
+        android:layout_marginLeft="-216dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/textViewAreaTitle"
+        android:text="Área:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewPerimetroTitle"
+        android:layout_width="77dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/textViewAreaTitle"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/imageView"
+        android:text="Perímetro:" />
+
+    <TextView
+        android:id="@+id/textViewPerimetroDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAreaDescription"
+        android:layout_marginLeft="-149dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/textViewPerimetroTitle"
+        android:text="Perímetro:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewVolumenTitle"
+        android:layout_width="77dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/textViewPerimetroTitle"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/imageView"
+        android:text="Volumen:"/> <!-- Hide the "Volumen" TextView initially -->
+
+    <TextView
+        android:id="@+id/textViewVolumenDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPerimetroDescription"
+        android:layout_marginLeft="-148dp"
+        android:layout_marginTop="-57dp"
+        android:layout_toRightOf="@id/textViewVolumenTitle"
+        android:text="Volumen:"
+        android:textStyle="bold" />
+</RelativeLayout>
